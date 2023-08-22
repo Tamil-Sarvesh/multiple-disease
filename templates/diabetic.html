@@ -1,0 +1,15 @@
+{% extends "layout.html" %} {% block contents %}
+
+<br>
+<form action="{{ url_for('diabetic1')}}"method="post">
+      <h3>Pregnancies</h3><input type="text" name="Pregnancies" placeholder="Pregnancies" required="required" />
+       <h3>Glucose Level</h3> <input type="text" name="Glucose Level" placeholder="Glucose Level" required="required" />
+         <h3>BloodPressure</h3><input type="text" name="BloodPressure" placeholder="BloodPressure" required="required" />
+         <h3>SkinThickness</h3><input type="text" name="SkinThickness" placeholder="SkinThickness" required="required" />
+         <h3>Insulin</h3><input type="text" name="Insulin" placeholder="Insulin" required="required" />
+         <h3>BMI</h3><input type="text" name="BMI" placeholder="BMI" required="required" />
+        <h3>Age</h3> <input type="text" name="Age" placeholder="Age" required="required" />
+         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+{% endblock contents%}
